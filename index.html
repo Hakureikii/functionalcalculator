@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator olet</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"> </script>
+</head>
+
+<body>
+   <div class="container"> 
+      <div class="contain"> 
+         <div class="inp">
+            <input type="text" id = "display" disabled>
+         </div>
+
+         <div class="row1"> 
+            <button onclick = "append('1')"> 1 </button>
+            <button onclick = "append('2')"> 2 </button>
+            <button onclick = "append('3')"> 3 </button>
+            <button onclick = "del_all()"> AC </button>
+         </div>
+
+         <div class="row2">
+            <button onclick = "append('4')"> 4 </button>
+            <button onclick = "append('5')"> 5 </button>
+            <button onclick = "append('6')"> 6 </button>
+            <button onclick = "backspace()"> C </button>
+
+         </div>
+
+         <div class="row3">
+            <button onclick = "append('7')"> 7 </button>
+            <button onclick = "append('8')"> 8 </button>
+            <button onclick = "append('9')"> 9 </button>
+            <button onclick = "append('0')"> 0 </button>
+
+         </div>
+
+         <div class="row4">
+            <button onclick = "append('+')"> + </button>
+            <button onclick = "append('-')"> - </button>
+            <button onclick = "append('*')"> x </button>
+            <button onclick = "append('/')"> / </button>
+
+         </div>
+         
+         <button onclick = "calculate()"> = </button>    
+      </div>
+
+   </div>
+   
+</body>
+</html>
